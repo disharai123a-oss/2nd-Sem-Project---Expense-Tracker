@@ -9,8 +9,8 @@ const balanceEl = document.getElementById("balance");
 let editIndex = null;
 
 //Disha RAi
-function saveData() {
-  localStorage.setItem("transactions", JSON.stringify(transactions));
+function saveData () {
+  localStorage.setItem("transactions" , JSON.stringify(transactions));
 }
 
 // Push 7 - Sahil | Render Transaction
@@ -99,11 +99,11 @@ const cancelBtn = document.getElementById("cancel-btn");
 
 cancelBtn.addEventListener("click", clearInputs);
 
-function clearInputs() {
+ function clearInputs() {
 
   form.reset();
 
-  editIndex = null;
+   editIndex = null;
 }
 
 // Sahil- Update the summary
